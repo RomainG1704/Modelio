@@ -16,10 +16,6 @@ public class Film {
 		return this.titre;
 	}
 
-	public void setCodePrix(int codePrix) {
-		this.codePrix = codePrix;
-	}
-
 	public int getCodePrix() {
 		return this.codePrix;
 	}
