@@ -14,6 +14,10 @@ public class Client {
 	public void addLocation(Location location) {
 		this.locations.add(location);
 	}
+
+	public List<Location>getLocations() {
+		return locations;
+	}
 	
 	public String getNom() {
 		return this.nom;
