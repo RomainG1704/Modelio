@@ -28,7 +28,7 @@ public class HtmlStatementTest {
         client.addLocation(location2);
 
         // Test génération du statement en HTML
-        String expectedStatement = "<html><body><h1>Facture pour Jean Dupont</h1><p>module.Film Normal: 10.0€</p><p>module.Film Nouveauté: 15.0€</p><p>Total: 25.0€</p></body></html>";
+        String expectedStatement = "<h1>Situation du client: Jean Dupont</h1><p>module.Film Normal: 6.0</p><p>module.Film Nouveauté: 15.0</p><p>Total: 21.0</p><p>Vous gagnez 13 points de fidelite</p>";
         String actualStatement = client.getStatement();
 
         assertEquals(expectedStatement, actualStatement);
