@@ -28,7 +28,7 @@ public class TextStatementTest {
         client.addLocation(location2);
 
         // Test génération du statement en texte
-        String expectedStatement = "Facture pour Jean Dupont\nmodule.Film Normal: 10.0€\nmodule.Film Nouveauté: 15.0€\nTotal: 25.0€";
+        String expectedStatement = "Situation du client: Jean Dupont\n\tmodule.Film Normal\t6.0\n\tmodule.Film Nouveauté\t15.0\nTotal du 21.0\nVous gagnez 13 points de fidelite\n";
         String actualStatement = client.getStatement();
 
         assertEquals(expectedStatement, actualStatement);
